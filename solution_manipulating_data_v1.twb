@@ -1,0 +1,743 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0712.0907                               -->
+<workbook original-version='18.1' source-build='2021.2.1 (20212.21.0712.0907)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Parameter_cubic_meters' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='1'>
+        <calculation class='tableau' formula='1' />
+        <range min='1' />
+      </column>
+    </datasource>
+    <datasource caption='Page   14 Table  2+ (nz_water_water_resources)' inline='true' name='federated.1fbaqsr0agxhlq16u14vv12mf5rx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='nz_water_water_resources' name='pdf.1na9cru0s54h9p10n54jg0vcj0qv'>
+            <connection class='pdf' cleaning='no' compat='no' dataRefreshTime='' directory='' interpretationMode='256' origfilename='C:/Users/charlotte.stiller/OneDrive - Metacrew Group GmbH/Dokumente/Charlotte/_Data Science_IT/Ironhack/5_Tableau/Tableau/-lab-tableau-manipulating-data-from-multiple-sources-master/files_for_lab/nz_water_water_resources.pdf' password='' pgFrom='' pgTo='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='date' date-parse-format='yyyy' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[2003]' />
+            <value name='[2004]' />
+            <value name='[2005]' />
+            <value name='[2006]' />
+            <value name='[2007]' />
+            <value name='[2008]' />
+            <value name='[2009]' />
+            <value name='[2010]' />
+            <value name='[1995]' />
+            <value name='[1996]' />
+            <value name='[1997]' />
+            <value name='[1998]' />
+            <value name='[1999]' />
+            <value name='[2000]' />
+            <value name='[2001]' />
+            <value name='[2002]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Page   14 Table  2+].[F10]' />
+              <field name='[Page   14 Table  2+].[F11]' />
+              <field name='[Page   14 Table  2+].[F12]' />
+              <field name='[Page   14 Table  2+].[F13]' />
+              <field name='[Page   14 Table  2+].[F14]' />
+              <field name='[Page   14 Table  2+].[F15]' />
+              <field name='[Page   14 Table  2+].[F16]' />
+              <field name='[Page   14 Table  2+].[F17]' />
+              <field name='[Page   14 Table  2+].[F2]' />
+              <field name='[Page   14 Table  2+].[F3]' />
+              <field name='[Page   14 Table  2+].[F4]' />
+              <field name='[Page   14 Table  2+].[F5]' />
+              <field name='[Page   14 Table  2+].[F6]' />
+              <field name='[Page   14 Table  2+].[F7]' />
+              <field name='[Page   14 Table  2+].[F8]' />
+              <field name='[Page   14 Table  2+].[F9]' />
+            </group>
+          </groups>
+          <relation all='true' name='Page   14 Table  2+' type='union'>
+            <columns>
+              <column datatype='string' name='F1' />
+              <column datatype='string' name='F2' />
+              <column datatype='string' name='F3' />
+              <column datatype='string' name='F4' />
+              <column datatype='string' name='F5' />
+              <column datatype='string' name='F6' />
+              <column datatype='string' name='F7' />
+              <column datatype='string' name='F8' />
+              <column datatype='string' name='F9' />
+              <column datatype='string' name='F10' />
+              <column datatype='string' name='F11' />
+              <column datatype='string' name='F12' />
+              <column datatype='string' name='F13' />
+              <column datatype='string' name='F14' />
+              <column datatype='string' name='F15' />
+              <column datatype='string' name='F16' />
+              <column datatype='string' name='F17' />
+              <column datatype='string' name='Inflow s' />
+              <column datatype='string' name='Table Name' />
+            </columns>
+            <relation connection='pdf.1na9cru0s54h9p10n54jg0vcj0qv' name='Page   14 Table  2' table='[&apos;Page   14 Table  2$&apos;]' type='table'>
+              <columns gridOrigin='A1:Q9:no:A1:Q9:0' header='no' lost='0' outcome='2' processed='112'>
+                <column datatype='string' name='F1' ordinal='0' />
+                <column datatype='string' name='F2' ordinal='1' />
+                <column datatype='string' name='F3' ordinal='2' />
+                <column datatype='string' name='F4' ordinal='3' />
+                <column datatype='string' name='F5' ordinal='4' />
+                <column datatype='string' name='F6' ordinal='5' />
+                <column datatype='string' name='F7' ordinal='6' />
+                <column datatype='string' name='F8' ordinal='7' />
+                <column datatype='string' name='F9' ordinal='8' />
+                <column datatype='string' name='F10' ordinal='9' />
+                <column datatype='string' name='F11' ordinal='10' />
+                <column datatype='string' name='F12' ordinal='11' />
+                <column datatype='string' name='F13' ordinal='12' />
+                <column datatype='string' name='F14' ordinal='13' />
+                <column datatype='string' name='F15' ordinal='14' />
+                <column datatype='string' name='F16' ordinal='15' />
+                <column datatype='string' name='F17' ordinal='16' />
+              </columns>
+            </relation>
+            <relation connection='pdf.1na9cru0s54h9p10n54jg0vcj0qv' name='Page   14 Table  3' table='[&apos;Page   14 Table  3$&apos;]' type='table'>
+              <columns gridOrigin='A1:Q10:no:A1:Q10:0' header='yes' lost='0' outcome='2' processed='80'>
+                <column datatype='string' name='Inflow s' ordinal='0' />
+                <column datatype='string' name='F2' ordinal='1' />
+                <column datatype='string' name='F3' ordinal='2' />
+                <column datatype='string' name='F4' ordinal='3' />
+                <column datatype='string' name='F5' ordinal='4' />
+                <column datatype='string' name='F6' ordinal='5' />
+                <column datatype='string' name='F7' ordinal='6' />
+                <column datatype='string' name='F8' ordinal='7' />
+                <column datatype='string' name='F9' ordinal='8' />
+                <column datatype='string' name='F10' ordinal='9' />
+                <column datatype='string' name='F11' ordinal='10' />
+                <column datatype='string' name='F12' ordinal='11' />
+                <column datatype='string' name='F13' ordinal='12' />
+                <column datatype='string' name='F14' ordinal='13' />
+                <column datatype='string' name='F15' ordinal='14' />
+                <column datatype='string' name='F16' ordinal='15' />
+                <column datatype='string' name='F17' ordinal='16' />
+              </columns>
+            </relation>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='date' date-parse-format='yyyy' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[2003]' />
+            <value name='[2004]' />
+            <value name='[2005]' />
+            <value name='[2006]' />
+            <value name='[2007]' />
+            <value name='[2008]' />
+            <value name='[2009]' />
+            <value name='[2010]' />
+            <value name='[1995]' />
+            <value name='[1996]' />
+            <value name='[1997]' />
+            <value name='[1998]' />
+            <value name='[1999]' />
+            <value name='[2000]' />
+            <value name='[2001]' />
+            <value name='[2002]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Page   14 Table  2+].[F10]' />
+              <field name='[Page   14 Table  2+].[F11]' />
+              <field name='[Page   14 Table  2+].[F12]' />
+              <field name='[Page   14 Table  2+].[F13]' />
+              <field name='[Page   14 Table  2+].[F14]' />
+              <field name='[Page   14 Table  2+].[F15]' />
+              <field name='[Page   14 Table  2+].[F16]' />
+              <field name='[Page   14 Table  2+].[F17]' />
+              <field name='[Page   14 Table  2+].[F2]' />
+              <field name='[Page   14 Table  2+].[F3]' />
+              <field name='[Page   14 Table  2+].[F4]' />
+              <field name='[Page   14 Table  2+].[F5]' />
+              <field name='[Page   14 Table  2+].[F6]' />
+              <field name='[Page   14 Table  2+].[F7]' />
+              <field name='[Page   14 Table  2+].[F8]' />
+              <field name='[Page   14 Table  2+].[F9]' />
+            </group>
+          </groups>
+          <relation all='true' name='Page   14 Table  2+' type='union'>
+            <columns>
+              <column datatype='string' name='F1' />
+              <column datatype='string' name='F2' />
+              <column datatype='string' name='F3' />
+              <column datatype='string' name='F4' />
+              <column datatype='string' name='F5' />
+              <column datatype='string' name='F6' />
+              <column datatype='string' name='F7' />
+              <column datatype='string' name='F8' />
+              <column datatype='string' name='F9' />
+              <column datatype='string' name='F10' />
+              <column datatype='string' name='F11' />
+              <column datatype='string' name='F12' />
+              <column datatype='string' name='F13' />
+              <column datatype='string' name='F14' />
+              <column datatype='string' name='F15' />
+              <column datatype='string' name='F16' />
+              <column datatype='string' name='F17' />
+              <column datatype='string' name='Inflow s' />
+              <column datatype='string' name='Table Name' />
+            </columns>
+            <relation connection='pdf.1na9cru0s54h9p10n54jg0vcj0qv' name='Page   14 Table  2' table='[&apos;Page   14 Table  2$&apos;]' type='table'>
+              <columns gridOrigin='A1:Q9:no:A1:Q9:0' header='no' lost='0' outcome='2' processed='112'>
+                <column datatype='string' name='F1' ordinal='0' />
+                <column datatype='string' name='F2' ordinal='1' />
+                <column datatype='string' name='F3' ordinal='2' />
+                <column datatype='string' name='F4' ordinal='3' />
+                <column datatype='string' name='F5' ordinal='4' />
+                <column datatype='string' name='F6' ordinal='5' />
+                <column datatype='string' name='F7' ordinal='6' />
+                <column datatype='string' name='F8' ordinal='7' />
+                <column datatype='string' name='F9' ordinal='8' />
+                <column datatype='string' name='F10' ordinal='9' />
+                <column datatype='string' name='F11' ordinal='10' />
+                <column datatype='string' name='F12' ordinal='11' />
+                <column datatype='string' name='F13' ordinal='12' />
+                <column datatype='string' name='F14' ordinal='13' />
+                <column datatype='string' name='F15' ordinal='14' />
+                <column datatype='string' name='F16' ordinal='15' />
+                <column datatype='string' name='F17' ordinal='16' />
+              </columns>
+            </relation>
+            <relation connection='pdf.1na9cru0s54h9p10n54jg0vcj0qv' name='Page   14 Table  3' table='[&apos;Page   14 Table  3$&apos;]' type='table'>
+              <columns gridOrigin='A1:Q10:no:A1:Q10:0' header='yes' lost='0' outcome='2' processed='80'>
+                <column datatype='string' name='Inflow s' ordinal='0' />
+                <column datatype='string' name='F2' ordinal='1' />
+                <column datatype='string' name='F3' ordinal='2' />
+                <column datatype='string' name='F4' ordinal='3' />
+                <column datatype='string' name='F5' ordinal='4' />
+                <column datatype='string' name='F6' ordinal='5' />
+                <column datatype='string' name='F7' ordinal='6' />
+                <column datatype='string' name='F8' ordinal='7' />
+                <column datatype='string' name='F9' ordinal='8' />
+                <column datatype='string' name='F10' ordinal='9' />
+                <column datatype='string' name='F11' ordinal='10' />
+                <column datatype='string' name='F12' ordinal='11' />
+                <column datatype='string' name='F13' ordinal='12' />
+                <column datatype='string' name='F14' ordinal='13' />
+                <column datatype='string' name='F15' ordinal='14' />
+                <column datatype='string' name='F16' ordinal='15' />
+                <column datatype='string' name='F17' ordinal='16' />
+              </columns>
+            </relation>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Page   14 Table  2+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Page   14 Table  2+]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page   14 Table  2_475469C9E92345B8809BC1482A29D96F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inflow s</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Inflow s]</local-name>
+            <parent-name>[Page   14 Table  2+]</parent-name>
+            <remote-alias>Inflow s</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page   14 Table  2_475469C9E92345B8809BC1482A29D96F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[Page   14 Table  2+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page   14 Table  2_475469C9E92345B8809BC1482A29D96F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page   14 Table  2_475469C9E92345B8809BC1482A29D96F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page   14 Table  2_475469C9E92345B8809BC1482A29D96F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='source' datatype='string' name='[F1]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Groundw ater&quot;' value='Ground water' />
+        </aliases>
+      </column>
+      <column datatype='string' hidden='true' name='[Inflow s]' role='dimension' type='nominal' />
+      <column caption='year' datatype='date' name='[Pivot Field Names]' role='dimension' type='ordinal' />
+      <column caption='million cubic meters' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[Table Name]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Page   14 Table  2' datatype='table' name='[__tableau_internal_object_id__].[Page   14 Table  2_475469C9E92345B8809BC1482A29D96F]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/charlotte.stiller/OneDrive - Metacrew Group GmbH/Dokumente/Charlotte/_Data Science_IT/Ironhack/5_Tableau/Page   14 Table  2+ (nz_water_water_resources).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='09/10/2021 09:02:31 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Page   14 Table  2+ (nz_water_water_resources)' increment-value='%null%' refresh-type='create' rows-inserted='288' timestamp-start='2021-09-10 09:02:31.837' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Page   14 Table  2+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page   14 Table  2_475469C9E92345B8809BC1482A29D96F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Pivot Field Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Pivot</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page   14 Table  2_475469C9E92345B8809BC1482A29D96F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Values</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Pivot Field Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Values</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Pivot</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>127</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page   14 Table  2_475469C9E92345B8809BC1482A29D96F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='18' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <filter class='categorical' column='[F1]' filter-group='2'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[F1]' />
+          <groupfilter function='union'>
+            <groupfilter function='member' level='[F1]' member='%null%' />
+            <groupfilter function='member' level='[F1]' member='&quot;Change in storage&quot;' />
+            <groupfilter function='member' level='[F1]' member='&quot;Total change in storage&quot;' />
+            <groupfilter function='member' level='[F1]' member='&quot;Total outflow s&quot;' />
+          </groupfilter>
+        </groupfilter>
+      </filter>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Page   14 Table  2' id='Page   14 Table  2_475469C9E92345B8809BC1482A29D96F'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='date' date-parse-format='yyyy' name='Pivot Field Names' />
+                  <column datatype='integer' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[2003]' />
+                  <value name='[2004]' />
+                  <value name='[2005]' />
+                  <value name='[2006]' />
+                  <value name='[2007]' />
+                  <value name='[2008]' />
+                  <value name='[2009]' />
+                  <value name='[2010]' />
+                  <value name='[1995]' />
+                  <value name='[1996]' />
+                  <value name='[1997]' />
+                  <value name='[1998]' />
+                  <value name='[1999]' />
+                  <value name='[2000]' />
+                  <value name='[2001]' />
+                  <value name='[2002]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[Page   14 Table  2+].[F10]' />
+                    <field name='[Page   14 Table  2+].[F11]' />
+                    <field name='[Page   14 Table  2+].[F12]' />
+                    <field name='[Page   14 Table  2+].[F13]' />
+                    <field name='[Page   14 Table  2+].[F14]' />
+                    <field name='[Page   14 Table  2+].[F15]' />
+                    <field name='[Page   14 Table  2+].[F16]' />
+                    <field name='[Page   14 Table  2+].[F17]' />
+                    <field name='[Page   14 Table  2+].[F2]' />
+                    <field name='[Page   14 Table  2+].[F3]' />
+                    <field name='[Page   14 Table  2+].[F4]' />
+                    <field name='[Page   14 Table  2+].[F5]' />
+                    <field name='[Page   14 Table  2+].[F6]' />
+                    <field name='[Page   14 Table  2+].[F7]' />
+                    <field name='[Page   14 Table  2+].[F8]' />
+                    <field name='[Page   14 Table  2+].[F9]' />
+                  </group>
+                </groups>
+                <relation all='true' name='Page   14 Table  2+' type='union'>
+                  <columns>
+                    <column datatype='string' name='F1' />
+                    <column datatype='string' name='F2' />
+                    <column datatype='string' name='F3' />
+                    <column datatype='string' name='F4' />
+                    <column datatype='string' name='F5' />
+                    <column datatype='string' name='F6' />
+                    <column datatype='string' name='F7' />
+                    <column datatype='string' name='F8' />
+                    <column datatype='string' name='F9' />
+                    <column datatype='string' name='F10' />
+                    <column datatype='string' name='F11' />
+                    <column datatype='string' name='F12' />
+                    <column datatype='string' name='F13' />
+                    <column datatype='string' name='F14' />
+                    <column datatype='string' name='F15' />
+                    <column datatype='string' name='F16' />
+                    <column datatype='string' name='F17' />
+                    <column datatype='string' name='Inflow s' />
+                    <column datatype='string' name='Table Name' />
+                  </columns>
+                  <relation connection='pdf.1na9cru0s54h9p10n54jg0vcj0qv' name='Page   14 Table  2' table='[&apos;Page   14 Table  2$&apos;]' type='table'>
+                    <columns gridOrigin='A1:Q9:no:A1:Q9:0' header='no' lost='0' outcome='2' processed='112'>
+                      <column datatype='string' name='F1' ordinal='0' />
+                      <column datatype='string' name='F2' ordinal='1' />
+                      <column datatype='string' name='F3' ordinal='2' />
+                      <column datatype='string' name='F4' ordinal='3' />
+                      <column datatype='string' name='F5' ordinal='4' />
+                      <column datatype='string' name='F6' ordinal='5' />
+                      <column datatype='string' name='F7' ordinal='6' />
+                      <column datatype='string' name='F8' ordinal='7' />
+                      <column datatype='string' name='F9' ordinal='8' />
+                      <column datatype='string' name='F10' ordinal='9' />
+                      <column datatype='string' name='F11' ordinal='10' />
+                      <column datatype='string' name='F12' ordinal='11' />
+                      <column datatype='string' name='F13' ordinal='12' />
+                      <column datatype='string' name='F14' ordinal='13' />
+                      <column datatype='string' name='F15' ordinal='14' />
+                      <column datatype='string' name='F16' ordinal='15' />
+                      <column datatype='string' name='F17' ordinal='16' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.1na9cru0s54h9p10n54jg0vcj0qv' name='Page   14 Table  3' table='[&apos;Page   14 Table  3$&apos;]' type='table'>
+                    <columns gridOrigin='A1:Q10:no:A1:Q10:0' header='yes' lost='0' outcome='2' processed='80'>
+                      <column datatype='string' name='Inflow s' ordinal='0' />
+                      <column datatype='string' name='F2' ordinal='1' />
+                      <column datatype='string' name='F3' ordinal='2' />
+                      <column datatype='string' name='F4' ordinal='3' />
+                      <column datatype='string' name='F5' ordinal='4' />
+                      <column datatype='string' name='F6' ordinal='5' />
+                      <column datatype='string' name='F7' ordinal='6' />
+                      <column datatype='string' name='F8' ordinal='7' />
+                      <column datatype='string' name='F9' ordinal='8' />
+                      <column datatype='string' name='F10' ordinal='9' />
+                      <column datatype='string' name='F11' ordinal='10' />
+                      <column datatype='string' name='F12' ordinal='11' />
+                      <column datatype='string' name='F13' ordinal='12' />
+                      <column datatype='string' name='F14' ordinal='13' />
+                      <column datatype='string' name='F15' ordinal='14' />
+                      <column datatype='string' name='F16' ordinal='15' />
+                      <column datatype='string' name='F17' ordinal='16' />
+                    </columns>
+                  </relation>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Page   14 Table  2+ (nz_water_water_resources)' name='federated.1fbaqsr0agxhlq16u14vv12mf5rx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fbaqsr0agxhlq16u14vv12mf5rx'>
+            <column caption='source' datatype='string' name='[F1]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Groundw ater&quot;' value='Ground water' />
+              </aliases>
+            </column>
+            <column caption='million cubic meters' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[F1]' derivation='None' name='[none:F1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <natural-sort column='[federated.1fbaqsr0agxhlq16u14vv12mf5rx].[none:F1:nk]' direction='DESC' />
+          <filter class='quantitative' column='[federated.1fbaqsr0agxhlq16u14vv12mf5rx].[sum:Pivot Field Values:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>7875</max>
+          </filter>
+          <slices>
+            <column>[federated.1fbaqsr0agxhlq16u14vv12mf5rx].[sum:Pivot Field Values:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1fbaqsr0agxhlq16u14vv12mf5rx].[sum:Pivot Field Values:qk]' field-type='quantitative' major-origin='0' major-spacing='1000' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1fbaqsr0agxhlq16u14vv12mf5rx].[sum:Pivot Field Values:qk]' value='' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1fbaqsr0agxhlq16u14vv12mf5rx].[sum:Pivot Field Values:qk]' value='n0,K' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='alternate-text' field='[federated.1fbaqsr0agxhlq16u14vv12mf5rx].[sum:Pivot Field Values:qk]' value='' />
+            <format attr='display-alternate-text' field='[federated.1fbaqsr0agxhlq16u14vv12mf5rx].[sum:Pivot Field Values:qk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.1fbaqsr0agxhlq16u14vv12mf5rx].[sum:Pivot Field Values:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fbaqsr0agxhlq16u14vv12mf5rx].[none:F1:nk]</rows>
+        <cols>[federated.1fbaqsr0agxhlq16u14vv12mf5rx].[sum:Pivot Field Values:qk]</cols>
+      </table>
+      <simple-id uuid='{07ED978F-0A96-4312-9AD6-A88A1359FCA4}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1fbaqsr0agxhlq16u14vv12mf5rx].[none:F1:nk]</field>
+            <field>[federated.1fbaqsr0agxhlq16u14vv12mf5rx].[none:Pivot Field Values:ok]</field>
+            <field>[federated.1fbaqsr0agxhlq16u14vv12mf5rx].[yr:Pivot Field Names:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4A30E35F-2E86-42D1-8058-CADF22E83A20}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='167' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAACnCAYAAABHLVPlAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAVrUlEQVR4nO3df1xUdb7H8dc2QTOi4CgaiCKQJr9U/AGmyV1XedhSllxtNX9ttJRjWlGW
+      u5W7Ejxsay9rRfkLFdPY1fzVRa2dK1d2NV3NHwSmDpgI409mQZ2UYGZhT90/ZviNCBsE3vN5
+      Ph4+HnLmzHe+853zPuc7Z873e37y/ffff48QKnVXR1dAiI4kARCqJgEQqiYBEKomARCqJgEQ
+      qiYBEKomARCqJgEQqiYBEKomARCqJgEQqiYBEKomARCqJgEQqiYBEKomARCqJgEQqiYBEKom
+      ARCqJgEQqiYBEKomARCqJgEQqiYBEKomARCqJgEQqiYBEJ1aRUVFu5YvARCqJgEQqnZ3R1dA
+      iNuZ/PrH7Va2HAGEqrXqCGAxJpGQcfmWj0c8m0pc2A+u0x3LYkziM+8ld0Ab5JKWVMwjS6Lx
+      6uiqdLBWBcAregmp0dV/5ZJmyGZEahyd/vP+f6MTtbnFSNIamHuHh0i6QELV2udLsHKV7E1r
+      2XzUTFmlBl2/0cyZN5MRnpomVy83beH99Qcxl1WCazf8ImbwzMwRVK9eXmBkw8Y9nC6xga4f
+      w6f9iqfG9MHxsMLV7O18lHGYghIbCq54DprALEMMwW5NvhoFWZvZZjzheD2Njn7Dp/Grp8bQ
+      x/l6FmMSn3nOY0jhn9h1uIASG3QPmUb8gnE160AVFw9uZOP2L7loU9DoetPH/Vu8pzTdJC0q
+      s1671X8fdbufRw1HnU+I4NkmjgbK1Wy2f5TB4YISbAq4eg5iwiwDMXUb5LsbnDGuYMWe0zia
+      9afEvfA4g92dlVGusG/1KjJOl2BTNOh6h/DQk7FED3AjN83AKmcVEgwZjv/4xJC4JBqvmu7V
+      RO4+vIF3Nx3lnocTWRLdOY8T7RAAOyfTk9nJ47ycPBxv7XdYc7fx7ttpkDiXEQ03SiWXj9eX
+      MublZH7trQX7Nc4fz8Z8HTx7AZZMlu+w8djCZBboXaiy5rF7VQrp3RKJHawFrmO+7M4Ew5s8
+      39cNF8VO8cF1LNt4hKXzR6FtVL8rmK8GMv212fTvqUVTZSUv4wNWftqXpZN9a9bK3r6Rro9O
+      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
+      dD4XmnqKcgXjuiz8nprD4FvMIiYBEHeIG1jtPdA33JC1enrYrdxotL5C0c6VfBG6gOmBt57b
+      SAbEiDuHXk/3Rgu7o9fXX3I5wzljtXYU8//oT3NTe8kRQNw5rFa+abTwG6zW+kt8YhJJTU3h
+      uWEmtu0uanZiYgmAuEN4oNdex2pvsNhu5bpWj0ej9bUMnrOQB/NXs6GJ05/VJADiDuFLYIiZ
+      7Jz6G3N5TjbmkECanNJY04foedFY0259qlQCIO4QGoKjJnJzUwqfmu0oKNjNn5Ky6SYTo4Jv
+      3c/vMY5n4+4la72RK030heRLsLhzeE0kPl5hw9pFzL9a6Zh7NT6+3l1nmuIWFkv8pTd5Z4M3
+      iXH1fw+QEWFC1aQLJFRNAiBUTQIgVE0CIFRNAiBUTQIgVE0CIFRNAiBUTQIgVE0CIFRNAiBU
+      TQIgVE0CIFRNAiBUTQIgVE0CIFRNAiBUTQIgVE0CIFRNAiBUTQIgVE0CIFRNAiBUTQIgVE0C
+      IFRNAiBUTQIgVE0CIFRNAiBUTQIgVE0CIFRNAiBUTQIgVE0CIFRNAiBU7f8AkSTOWw1jr6EA
+      AAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
